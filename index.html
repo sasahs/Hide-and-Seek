@@ -3,22 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>내가 왔단다 숨으려 해도 소용없어</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+    }
+    form {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 8px;
+      font-size: 1em;
+    }
+    button {
+      padding: 10px;
+      font-size: 1em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hide and Seek</h1>
   <form action="https://formspree.io/f/your_form_id" method="POST">
+    <h1>Hide and Seek</h1>
     <label>
       CTF ID:
       <input type="text" name="name">
-    </label><br>
+    </label>
     <label>
       Email:
       <input type="email" name="email">
-    </label><br>
+    </label>
     <label>
       Flag:
       <textarea name="message"></textarea>
-    </label><br>
+    </label>
     <button type="submit">Send</button>
   </form>
 </body>
